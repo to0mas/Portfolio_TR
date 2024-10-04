@@ -245,10 +245,7 @@ opacity: 0;
     opacity: 1;
     transition: 1s all; }
 
-    .hero_img img:hover{
-        transform: scale(1.1);
-        transition: 1s all;
-    }
+  
 
  
    
