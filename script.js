@@ -17,3 +17,7 @@ const observer = new IntersectionObserver((entries) => {
   
   const hiddenElements = document.querySelectorAll('.about');
   hiddenElements.forEach((el) => observer.observe(el));
+
+
+  const myText = new SplitType('.nadpis-1')
+
