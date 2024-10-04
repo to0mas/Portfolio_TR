@@ -245,7 +245,10 @@ opacity: 0;
     opacity: 1;
    }
 
-  
+  .char{
+    transform:  translateY(115px);
+    transition: transform .5s;
+  }
 
  
    

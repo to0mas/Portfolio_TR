@@ -19,5 +19,11 @@ const observer = new IntersectionObserver((entries) => {
   hiddenElements.forEach((el) => observer.observe(el));
 
 
-  const myText = new SplitType('.nadpis-1')
+  const myText = new SplitType('#nadpis')
 
+  gsap.to('.char',{
+    y:0,
+    stagger: 0.05,
+    delay: 0.2,
+    duration: .1,
+  })
