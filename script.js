@@ -5,25 +5,16 @@ hamburger.onclick = function(){
 }
 
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
+
+
+
+  const splitText = new SplitType('.nadpis-1', { types: 'chars' });
+
+    
+    gsap.from(splitText.chars, {
+      opacity: 0,
+      y: 50,
+      stagger: 0.05,
+      duration: 1,
+      ease: 'back.out(1.7)',
     });
-  });
-  
-  const hiddenElements = document.querySelectorAll('.about');
-  hiddenElements.forEach((el) => observer.observe(el));
-
-
-  const myText = new SplitType('#nadpis')
-
-  gsap.to('.char',{
-    y:0,
-    stagger: 0.05,
-    delay: 0.2,
-    duration: .1,
-  })
