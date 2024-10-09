@@ -6,44 +6,61 @@ hamburger.onclick = function(){
 
 
 
-gsap.to('.horizontal-content', {
-    xPercent: -100 * (document.querySelectorAll('.box').length - 1),
-    ease: 'none',
-    scrollTrigger: {
-        trigger: '.horizontal-scroll',
-        start: 'top top',
-        end: '+=2000',
-        pin: true,
-        scrub: true,
-    }
+const races = document.querySelector("body");
+console.log(races.offsetWidth)
+
+function getScrollAmount() {
+	let racesWidth = races.scrollWidth;
+	return -(racesWidth - window.innerWidth);
+}
+
+const tween = gsap.to(races, {
+	
+	duration: 3,
+	ease: "none",
 });
 
-// 4. Draggovatelný box
-Draggable.create(".draggable-box", {
-    type: "x,y",
-    edgeResistance: 0.65,
-    bounds: ".horizontal-scroll",
-    inertia: true
-});
 
-// 5. Návrat k vertikálnímu scrollování po 300vh
-gsap.fromTo('.resume-text',
-    { opacity: 0, y: 50 },
-    {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-            trigger: '.vertical-resume',
-            start: 'top center',
-            end: 'top 100px',
-            scrub: true,
-        }
-    }
-);
+ScrollTrigger.create({
+	trigger:".services",
+	start:"top 20%",
+	end: () => `+=${getScrollAmount() * -1}`,
+	pin:true,
+	animation:tween,
+	scrub:1,
+	invalidateOnRefresh:true,
+	markers:false,
+})
+gsap.from(".predstaveni", {
+    opacity: 0,
+    scale: 0.5,
+    duration: 1,
+    ease: "power4.out"
+  });
+  gsap.from(".predstaveni span", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.1
+  });
+
+gsap.from(".nadpis-1", {
+ 
+    scale: 2,
+    duration: 1,
+    ease: "power4.out"
+  });
+  gsap.from(".nadpis-1 span", {
+ 
+    y: 50,
+    duration: 10,
+    ease: "power2.out",
+    stagger: 0.1
+  });
+
+ 
 
 
 
-
-
-    
+  
