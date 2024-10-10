@@ -48,17 +48,46 @@ gsap.from(".predstaveni", {
 gsap.from(".nadpis-1", {
  
     scale: 2,
-    duration: 1,
+    duration: 2,
     ease: "power4.out"
   });
   gsap.from(".nadpis-1 span", {
  
     y: 50,
-    duration: 10,
+    duration: 2,
     ease: "power2.out",
     stagger: 0.1
   });
 
+ 
+  gsap.from(".nadpis-about", {
+    opacity: 0,
+    y: 100,
+    duration: 3,
+    ease: "expo.out",
+
+    scrollTrigger: {
+        trigger: ".nadpis-about",  
+        start: "top 80%",           
+        end: "top 30%",             
+        scrub: 1,                  
+        markers: false              
+    }
+});
+gsap.from(".about-paragraph", {
+  opacity: 0,
+  x: -100, 
+  duration: 5,
+  ease: "expo.out",
+
+  scrollTrigger: {
+      trigger: ".about-paragraph",  
+      start: "top 80%",            
+      end: "top 50%",            
+      scrub: .5,                   
+      markers: false              
+  }
+});s
  
 
 
