@@ -488,6 +488,62 @@ opacity: 0;
         justify-content: right;
     }
 
-
+    @media (max-width: 1200px) {
+        .about {
+            padding: 0 100px;
+            margin-top: 450px;
+        }
+        .about-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .nadpis-about h1 {
+            font-size: 90px;
+        }
+        .about-paragraph {
+            justify-content: flex-start;
+            padding: 0 20px;
+        }
+        .about-paragraph p {
+            font-size: 24px;
+        }
+        .coin img {
+            width: 200px;
+            bottom: 150px;
+            right: 0;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .about {
+            padding: 0 50px;
+        }
+        .nadpis-about h1 {
+            font-size: 70px;
+        }
+        .about-paragraph p {
+            font-size: 20px;
+        }
+        .coin img {
+            width: 150px;
+            bottom: 120px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .about {
+            padding: 0 20px;
+        }
+        .nadpis-about h1 {
+            font-size: 50px;
+        }
+        .about-paragraph p {
+            font-size: 16px;
+        }
+        .coin img {
+            width: 120px;
+            bottom: 100px;
+        }
+    }
 
     
