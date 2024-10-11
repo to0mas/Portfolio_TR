@@ -87,7 +87,7 @@ gsap.from(".about-paragraph", {
       scrub: .5,                   
       markers: false              
   }
-});s
+});
  
 
 

@@ -487,7 +487,8 @@ opacity: 0;
         display: flex;
         justify-content: right;
     }
-
+  
+    
     @media (max-width: 1200px) {
         .about {
             padding: 0 100px;
