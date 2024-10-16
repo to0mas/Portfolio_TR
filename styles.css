@@ -154,6 +154,7 @@ opacity: 0;
 
     }
   .fa-brands i{
+    margin-bottom: 10px;
     flex-direction: row;
     gap: 8px;
   }
