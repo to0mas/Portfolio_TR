@@ -63,7 +63,7 @@ gsap.from(".nadpis-1", {
   gsap.from(".nadpis-about", {
     opacity: 0,
     y: 100,
-    duration: 3,
+    duration: 20,
     ease: "expo.out",
 
     scrollTrigger: {
@@ -77,7 +77,7 @@ gsap.from(".nadpis-1", {
 gsap.from(".about-paragraph", {
   opacity: 0,
   x: -100, 
-  duration: 5,
+  duration: 20,
   ease: "expo.out",
 
   scrollTrigger: {
@@ -85,7 +85,8 @@ gsap.from(".about-paragraph", {
       start: "top 80%",            
       end: "top 50%",            
       scrub: .5,                   
-      markers: false              
+      markers: false, 
+                   
   }
 });
  
