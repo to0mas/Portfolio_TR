@@ -60,7 +60,7 @@ gsap.from(".nadpis-1", {
   });
 
  
-  gsap.from(".nadpis-about", {
+  gsap.from(".nadpis-about ", {
     opacity: 0,
     y: 100,
     duration: 20,
@@ -90,7 +90,20 @@ gsap.from(".about-paragraph", {
   }
 });
  
+gsap.from(".skills-title", {
+  opacity: 0,
+  x: -100, // Move from the left
+  duration: 20,
+  ease: "expo.out",
 
+  scrollTrigger: {
+      trigger: ".skills-title",
+      start: "left 50%",
+      end: "top 30%",
+      scrub: 1,
+      markers: false
+  }
+});
 
 
   
