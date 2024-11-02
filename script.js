@@ -92,7 +92,7 @@ gsap.from(".about-paragraph", {
  
 gsap.from(".skills-title", {
   opacity: 0,
-  x: -100, // Move from the left
+  x: -100,
   duration: 20,
   ease: "expo.out",
 
@@ -117,11 +117,28 @@ const posY = e.clientY;
 cursorDot.style.left = `${posX}px`;
 cursorDot.style.top = `${posY}px`;
 
-//cursorOutline.style.left = `${posX}px`;
-//cursorOutline.style.top = `${posY}px`;
+cursorOutline.style.left = `${posX}px`;
+cursorOutline.style.top = `${posY}px`;
 
 cursorOutline.animate({
 left: `${posX}px`,
 right:`${posY}px`,
 },{duration: 500, fill: "forwards"});
   });
+
+  gsap.fromTo(".skills-box", 
+    { opacity: 0, y: -50 }, 
+    { 
+        opacity: 1, 
+        y: 0, 
+        duration: 1,
+        ease: "bounce.out",
+        stagger: 0.25,
+        scrollTrigger: {
+            trigger: "#skills",
+            start: "top 90%", // Trigger slightly earlier as you approach the section
+            end: "top 10%",   // End trigger as you start to scroll away
+            toggleActions: "play none none reverse", // Play on enter, reverse on leave
+        }
+    }
+);

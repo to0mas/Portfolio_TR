@@ -15,15 +15,16 @@ body{
     cursor: none;
 }
 .cursor-dot{
-    width: 30px;
-    height: 30px;
-    background-color: rgba(205, 92, 92, 0.447);
+    width: 25px;
+    height: 25px;
+    background-color: rgba(205, 92, 92, 0.625);
 }
 .cursor-outline{
     width: 30px;
     height: 30px;
-    border: 2px solid hsla (0,0%,100%, 0.5);
+    border: 2px solid rgba(205, 92, 92, 0.625);
 }
+
 .cursor-dot,
 .cursor-outline{
    position: fixed;
@@ -89,7 +90,12 @@ color: white;
     transition: color 0.3s, background-color 0.3s;
     font-size: 23px;
     border-radius: 50px; 
+  
     
+    
+}
+.navbar{
+    gap: 10px;
 }
 .socials{
     display: flex ;
