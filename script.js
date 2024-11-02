@@ -136,9 +136,9 @@ right:`${posY}px`,
         stagger: 0.25,
         scrollTrigger: {
             trigger: "#skills",
-            start: "top 90%", // Trigger slightly earlier as you approach the section
-            end: "top 10%",   // End trigger as you start to scroll away
-            toggleActions: "play none none reverse", // Play on enter, reverse on leave
+            start: "top 90%", 
+            end: "top 10%",  
+            toggleActions: "play none none reverse",
         }
     }
 );
