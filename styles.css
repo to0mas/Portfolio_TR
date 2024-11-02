@@ -36,6 +36,12 @@ background: black;
     height: 30px;
     border: 2px solid rgba(205, 92, 92, 0.625);
 }
+@media (max-width: 1200px) {
+    
+   .cursor-dot .cursor-outline{
+     display: block;
+    }
+}
 
 .cursor-dot,
 .cursor-outline{
