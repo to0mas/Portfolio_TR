@@ -15,8 +15,8 @@ body{
     cursor: none;
 }
 .cursor-dot{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: rgba(205, 92, 92, 0.447);
 }
 .cursor-outline{
