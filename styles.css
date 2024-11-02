@@ -12,6 +12,7 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+  
     cursor: none;
 }
 ::-webkit-scrollbar{
@@ -216,7 +217,6 @@ opacity: 0;
     height: 95vh;
     z-index: 0; 
     flex-direction: column;
-   
    
 }
 .hero-container{
@@ -490,9 +490,9 @@ opacity: 0;
     .about{
         width: 100%;
         height: 50vh;
-     
+   z-index: -100;
         padding: 0 300px;
-        
+       
     }
     .about-container{
         display: flex;
@@ -596,6 +596,7 @@ opacity: 0;
         padding: 0 200px;
         margin-top:200px;
       
+        background: radial-gradient(circle at center, rgba(205, 92, 92, 0.363), #000000 40%);
         align-items: center;
     }
     .skills-title{
