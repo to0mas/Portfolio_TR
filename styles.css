@@ -26,22 +26,30 @@ background: black;
 ::-webkit-scrollbar-thumb{
     background: indianred;
 }
-.cursor-dot{
-    width: 25px;
+.cursor-dot {
+    position: fixed;
+    width: 15px; 
+    height: 15px;
+    background-color: rgba(205, 92, 92, 0.514);
+    border-radius: 50%;
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+/* Cursor Outline */
+.cursor-outline {
+    position: fixed;
+    width: 25px; 
     height: 25px;
-    background-color: rgba(205, 92, 92, 0.625);
-}
-.cursor-outline{
-    width: 30px;
-    height: 30px;
-    border: 2px solid rgba(205, 92, 92, 0.625);
-}
-@media (max-width: 1200px) {
     
-   .cursor-dot .cursor-outline{
-     display: block;
-    }
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: rgba(205, 92, 92, 0.349);
 }
+
 
 .cursor-dot,
 .cursor-outline{
@@ -130,12 +138,12 @@ color: white;
     gap: 10px; }
 
 .navbar  a:hover {
-    color: #000000; 
-   background: #fff;
+    color: rgb(0, 0, 0); 
+   background: indianred;
 }
 .navbar a.active{
     color: #000000; 
-    background: #fff;
+    background: indianred;
  }
 
 
