@@ -61,6 +61,11 @@ background: black;
    z-index: 1000;
    pointer-events: none;
 }
+@media (max-width: 768px){
+    .cursor-dot.cursor-outline{
+        display: block;
+    }
+}
 html{
     scroll-behavior: smooth;
 }
