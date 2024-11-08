@@ -647,8 +647,10 @@ opacity: 0;
   @media (max-width: 768px) {
     .skills {
         padding: 0 20px;
-        height: 200px;
+        height: 200svh;
         margin-top: 100px;
+        background: radial-gradient(circle at left, rgba(205, 92, 92, 0.726), #000000 80%);
+        
     }
 
     .skills-title {
