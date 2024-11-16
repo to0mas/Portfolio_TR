@@ -686,7 +686,9 @@ color: #686868;
         background: radial-gradient(circle at left, rgba(205, 92, 92, 0.726), #000000 80%);
         
     }
-
+.skills-box{
+    width: 50%;
+}
     .skills-title {
         font-size: 80px;
         padding: 0;
