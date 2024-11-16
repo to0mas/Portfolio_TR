@@ -131,7 +131,7 @@ right:`${posY}px`,
     { 
         opacity: 1, 
         y: 0, 
-        duration: 1,
+        duration: .5,
         ease: "bounce.out",
         stagger: 0.25,
         scrollTrigger: {
