@@ -521,8 +521,13 @@ opacity: 0;
     }
     .nadpis-about h1 {
         display: flex;
-        font-size: 110px;
+        font-size: 10px;
         font-weight: bolder;
+        background: linear-gradient(90deg, #CD5C5C, #FF7F7F, #B22222);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
     }
     .about-paragraph{
         display: flex;
@@ -620,7 +625,11 @@ opacity: 0;
     }
     .skills-title{
         font-size: 100px;
-      
+        background: linear-gradient(90deg, #CD5C5C, #FF7F7F, #B22222);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
        margin-bottom: 20px;
     }
   .skills .skills-container{
@@ -657,7 +666,7 @@ opacity: 0;
   }
   .skills-nadpis h1{
 font-size: 30px;
-color: #686868;
+
   }
   .skills-text{
     display: flex;
@@ -668,45 +677,18 @@ color: #686868;
   }
 .skills-text img:hover{
     transform: scale(1.11);
-    transition: .5s all ease-in-out;
+    transition: all 0.5s ease;
 }
-.skills-text{
-    transition: 1s all ease-in-out;
+
+.skills-text img{
+    transition: all 0.5s ease;
 }
   .skills-box h2{
     font-weight: lighter;
   }
 
 
-  @media (max-width: 768px) {
-    .skills {
-        padding: 0 20px;
-        height: 200svh;
-        margin-top: 100px;
-        background: radial-gradient(circle at left, rgba(205, 92, 92, 0.726), #000000 80%);
-        
-    }
-.skills-box{
-    width: 50%;
-}
-    .skills-title {
-        font-size: 80px;
-        padding: 0;
-    }
-
-    .skills .skills-container {
-        grid-template-columns:  1fr;
-    }
-
-    .skills .skills-container .skills-box {
-        padding: 0 100px; 
-     
-    }
-
-    .skills .skills-container .skills-box img {
-        width:50%; 
-    }
-}
+ 
 
 .work{
     width: 100%;
