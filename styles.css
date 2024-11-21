@@ -521,7 +521,7 @@ opacity: 0;
     }
     .nadpis-about h1 {
         display: flex;
-        font-size: 10px;
+        font-size: 100px;
         font-weight: bolder;
         background: linear-gradient(90deg, #CD5C5C, #FF7F7F, #B22222);
 -webkit-background-clip: text;
@@ -687,7 +687,42 @@ font-size: 30px;
     font-weight: lighter;
   }
 
+  @media (max-width: 768px) {
+    .skills {
+        margin-top: 100px; /* Adjust spacing */
+        padding: 0 2%; /* Reduce padding */
+    }
 
+    .skills-title {
+        font-size: 6vw; /* Reduce font size on smaller screens */
+    }
+
+    .skills .skills-container {
+        gap: 15px;
+    }
+
+    .skills .skills-container .skills-box {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .skills .skills-container .skills-box img {
+        width: 40px; /* Smaller icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-title {
+        font-size: 5vw; /* Further reduce size for very small screens */
+    }
+
+    .skills .skills-container .skills-box img {
+        width: 35px; /* Smaller icons */
+    }
+
+    .skills-nadpis h1 {
+        font-size: 20px;
+    }
+}
  
 
 .work{
