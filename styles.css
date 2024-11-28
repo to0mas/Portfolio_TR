@@ -64,6 +64,8 @@ background: black;
 @media (max-width: 768px){
     .cursor-dot.cursor-outline{
         display: block;
+        width:  0px; 
+    height: 0px;
     }
 }
 html{
