@@ -630,7 +630,7 @@ text-fill-color: transparent;
     .skills-title h1{
         font-size: 300px;
         color: transparent;            
-        -webkit-text-stroke: 3px rgba(205, 92, 92, 0.26); 
+        -webkit-text-stroke: 3px rgba(700, 92, 92, 0.26); 
     }
     
     .skill {
