@@ -143,3 +143,18 @@ right:`${posY}px`,
     }
 );
 
+gsap.fromTo(".skill", 
+  { scale: 0.5, opacity: 0 },
+  { 
+    scale: 1, 
+    opacity: 1, 
+    duration: 3, 
+    ease: "elastic.out(1, 0.5)",
+    scrollTrigger: {
+      trigger: ".skill",
+      start: "top 90%", 
+      toggleActions: "play none none reverse",
+      opacity: 0, 
+    }
+  }
+);
