@@ -155,6 +155,7 @@ gsap.fromTo(".skill",
       start: "top 90%", 
       toggleActions: "play none none reverse",
       opacity: 0, 
+      duration:2,
     }
   }
 );
