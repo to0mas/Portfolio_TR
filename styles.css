@@ -751,4 +751,5 @@ footer{
 .footer-container span{
     color: #CD5C5C;
     margin-left: 5px;
+    font-weight: bold;
 }
