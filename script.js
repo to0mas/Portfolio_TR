@@ -159,3 +159,4 @@ gsap.fromTo(".skill",
     }
   }
 );
+
