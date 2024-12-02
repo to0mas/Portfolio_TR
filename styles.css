@@ -199,7 +199,7 @@ color: white;
        left: 0;
        right: 0;
        width: 100vw;
-background:   rgb(20, 20, 20);
+background:   rgb(0, 0, 0);
 transition: .2s;
 overflow: hidden;
 
