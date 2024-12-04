@@ -171,13 +171,14 @@ function openWEB(){
    content2.style.transform = "translateX(100%)"
    btn1.style.background = "#b85050"
    btn1.style.color = "#000000"
-   btn1.style.borderRadius = "20px 5px"
+   btn1.style.borderRadius = " 5px 20px"
 
    content1.style.transitionDelay="0.3s";
   content2.style.transitionDelay="0s";
 
    btn2.style.background = "#000000"
    btn2.style.color = "#fff"
+   btn1.style.borderRadius = " 5px 20px"
   
 }
 function openGRAP(){
@@ -189,8 +190,8 @@ function openGRAP(){
 
    content2.style.transitionDelay="0.3s";
    content1.style.transitionDelay="0s";
-
+   
    btn1.style.background = "#0000"
    btn1.style.color = "#fff"
-   btn1.style.borderRadius = "20px 5px"
+   btn1.style.borderRadius = " 5px 20px"
 }
