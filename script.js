@@ -172,7 +172,7 @@ function openWEB(){
    btn1.style.background = "#b85050"
    btn1.style.color = "#000000"
    btn1.style.borderRadius = " 5px 20px"
-
+  
    content1.style.transitionDelay="0.3s";
   content2.style.transitionDelay="0s";
 

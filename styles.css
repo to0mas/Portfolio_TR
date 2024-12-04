@@ -835,6 +835,7 @@ color: #000000;
 }
 #content1{
    transform: translateX(0px); 
+
 }
 #btn1{
     color: indianred;
@@ -844,12 +845,20 @@ color: #000000;
 }
 
 #content1  {
-    transform: translateX(0); }
+    
+    transform: translateX(0);
+    
+ }
 
 #content2 {
     transform: translateX(100vw); 
+    background: radial-gradient(circle at right, rgba(205, 92, 92, 0.233), #000000 40%);
+    
 }
 #content1 {
-    height: 300px;
+    height: 500px;
     overflow: hidden;
+}
+#content1 img{
+width: 150%;
 }
