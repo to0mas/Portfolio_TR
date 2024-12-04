@@ -810,12 +810,14 @@ color: #000000;
         margin: 0 auto;
     }
     .btn-box button{
-        padding: 10px 20px; /* Add a bit more padding for better tap area */
-        width: 80%; /* Make buttons wider for smaller screens */
-        max-width: 300px;
-        font-size: 15px;
+        font-size:20px;
     }
-  
+    .work #content1{
+        height: 250svh;
+    }
+    .work #content2{
+        height: 500px;
+    }
 }
 #content1{
    transform: translateX(0px); 
