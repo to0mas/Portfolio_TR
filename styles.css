@@ -748,7 +748,13 @@ footer{
     margin-left: 5px;
     font-weight: bold;
 }
-
+@media screen and (max-width: 768px){
+    .footer-container{
+        font-size: 15px;
+        justify-content: center;
+        
+    }
+}
 .work{
     width: 100%;
    height: 130vh;
