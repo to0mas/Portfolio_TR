@@ -830,7 +830,7 @@ color: #000000;
         height: 250svh;
     }
     .work #content2{
-        height: 500px;
+        height: 700px;
     }
 }
 #content1{
@@ -853,7 +853,7 @@ color: #000000;
 #content2 {
     transform: translateX(100vw); 
     background: radial-gradient(circle at right, rgba(205, 92, 92, 0.233), #000000 40%);
-    
+ 
 }
 #content1 {
     height: 500px;
