@@ -825,6 +825,7 @@ color: #000000;
     }
     .btn-box button{
         font-size:20px;
+        margin: 0 auto;
     }
     .work #content1{
         height: 250svh;
