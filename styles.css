@@ -723,12 +723,22 @@ text-fill-color: transparent;
         }
         .skill:nth-child(9) {
             top: 30%;
-            left: 48%;
+            left: 70%;
         }
         .skill:nth-child(8) {
             top: 65%;
             left: 60%;
         }
+        
+    .skill:nth-child(6) {
+        top: 80%;
+        left: 48%;
+    }
+    
+    .skill:nth-child(7) {
+        top: 70%;
+        left: 20%;
+    }
     }
 footer{
     width: 100%;
