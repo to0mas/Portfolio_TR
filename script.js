@@ -195,3 +195,17 @@ function openGRAP(){
    btn1.style.color = "#fff"
    btn1.style.borderRadius = " 5px 20px"
 }
+gsap.from(".contact ", {
+  opacity: 0,
+  y: 100,
+  duration: 20,
+  ease: "expo.out",
+
+  scrollTrigger: {
+      trigger: ".contact",  
+      start: "top 80%",           
+      end: "top 30%",             
+      scrub: 1,                  
+      markers: false              
+  }
+});;
