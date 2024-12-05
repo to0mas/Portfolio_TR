@@ -936,11 +936,13 @@ color: transparent;
     .left-contact h2{
         justify-content: center;
         text-align: center;
+        font-size: 80px;
+        
     }
-    .left-contact{
-        font-size:50px;
-        text-align: center;
+    .left-contact h1{
+        font-size: 80px;
     }
+
 }
 
 
