@@ -824,7 +824,7 @@ color: #000000;
 }
 
 .content {
-   
+   height: 200px;
     position: absolute;
     transform: translateX(0); 
 }
