@@ -709,7 +709,7 @@ text-fill-color: transparent;
    
     @media screen and (max-width: 768px) {
         .skill img {
-            width: 60x;
+            width: 60px;
             height: 60px;
         }
         .skills-title h1{
@@ -720,7 +720,7 @@ text-fill-color: transparent;
        
     .skill:nth-child(1) {
         top: 10%;
-        left: 25%; /* Horní část, lehce vpravo */
+        left: 25%; 
     }
     .skill:nth-child(2) {
         top: 20%;
@@ -789,111 +789,58 @@ footer{
     
     }
 }
+
 .work{
     width: 100%;
-   height: 180vh;
+    height: 120vh;
     position: relative;
    
-    margin-top: 150px;
     overflow: hidden;
-}
-#content2{
-    max-height:1000px;
 }
 .btn-box{
     display: flex;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .btn-box button{
-    background:black;
+  color: white;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    margin-right: 50px;
-    font-size:25px;
-    font-weight: 700;
-    color: #ccc;
-    text-transform: uppercase;
-    transition: .5s all ease-in-out;
-    
-}
-.btn-box button:hover {
-border-radius: 20px 5px;
-background: #b85050;
-color: #000000;
-   
+    margin-right: 20px;
+    font-weight: bold;
+    background: none;
+    font-size: 25px;
 }
 .btn-box i{
-    margin-right: 15px;
+    margin-right: 20px;
 }
-.content-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 10px; 
-    padding: 10px 10%;
-    max-width: 100%; 
-}
-
-.content-main img {
-   width: 100%;
-   height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+.content{
     display: flex;
-   
-    
-}
-
-.content {
-   height: 200px;
-    position: absolute;
-    transform: translateX(0); 
-}
-@media (max-width: 768px) {
-    .content-main {
-        grid-template-columns: 1fr; 
-        margin: 0 auto;
-    }
-    .btn-box button{
-        font-size:20px;
-        margin: 0 auto;
-    }
-    #content1 .content-main{
-        height: 250svh;
-        grid-template-columns: 1fr;
-    }
-    #content2 .content-main{
-        height: 700px;
-    }
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+   position: absolute;
+   transform: translateX(150%);
 }
 #content1{
-   transform: translateX(0px); 
-
+    transform: translateX(0px);
 }
 #btn1{
     color: indianred;
 }
-#btn1:hover{
-    color: #000000;
+#content1 .content-main{
+    display: flex;
+    justify-content:center;
+height: 800px ;
+flex-wrap: wrap;
+    padding: 0 400px;
 }
-
-#content1 .content-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 10px; 
-    padding: 10px 10%;
-    max-width: 100%;
-    transform: translateX(0);
-    
- }
-
-#content2 {
-    transform: translateX(100vw); 
+.content-main img{
+   
+   height:50%;
 }
-
 
 
 .contact{
