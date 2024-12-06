@@ -797,6 +797,12 @@ footer{
    
     overflow: hidden;
 }
+@media (max-width: 768px){
+    #content1 #content2 .content-main{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
 .btn-box{
     display: flex;
     justify-content: center;
@@ -838,9 +844,24 @@ flex-wrap: wrap;
     padding: 0 400px;
 }
 .content-main img{
-   
-   height:50%;
+   border-radius: 10px;
+   height:65%;
 }
+
+#content2 .content-main{
+    display: flex;
+    justify-content:center;
+height: 800px ;
+flex-wrap: wrap;
+  margin: 20px 10%;
+   gap: 10px;
+ 
+}
+ #content2 img{
+    border-radius: 10px;
+    height:40%;
+    width: 50;
+ }
 
 
 .contact{
