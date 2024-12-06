@@ -797,10 +797,34 @@ footer{
    
     overflow: hidden;
 }
-@media (max-width: 768px){
-    #content1 #content2 .content-main{
+/* Media Queries pro mobilní zařízení */
+@media screen and (max-width: 768px) {
+    .btn-box button {
+        font-size: 20px;
+        padding: 10px 12px;
+        margin-right: 10px;
+    }
+
+    #content1 .content-main, #content2 .content-main {
+        padding: 0 20px;
+        height: auto;
+    }
+
+    .content-main img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #content2 img {
+        height: auto;
+        width: 100%;
+    }
+
+    .content {
+        height: auto;
         flex-direction: column;
-        margin: 0 auto;
+        transform: translateX(0); /* Zaručí správné umístění */
     }
 }
 .btn-box{
