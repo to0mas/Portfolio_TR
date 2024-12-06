@@ -209,3 +209,28 @@ gsap.from(".contact ", {
       markers: false              
   }
 });;
+
+
+
+let filterItem = document.querySelector('.items-links');
+let filterImages = document.querySelectorAll('.gallery img');
+
+window.addEventListener('load', () => {
+  filterItem.addEventListener('click', (selectedItem) => {
+    if (selectedItem.target.classList.contains('item-link')) {
+      document.querySelector('.menu-active').classList.remove('menu-active');
+      selectedItem.target.classList.add('menu-active');
+
+      let filterName = selectedItem.target.getAttribute('data-name');
+
+      filterImages.forEach((image) => {
+        let imageCategory = image.getAttribute('data-name');
+        if (imageCategory === filterName) {
+          image.style.display = 'block';
+        } else {
+          image.style.display = 'none';
+        }
+      });
+    }
+  });
+});
