@@ -176,7 +176,22 @@ gsap.from(".contact ", {
   }
 });;
 
-
+gsap.fromTo(".project-img", 
+  { scale: 0.5, opacity: 0 },
+  { 
+    scale: 1, 
+    opacity: 1, 
+    duration: 3, 
+    ease: "elastic.out(1, 0.5)",
+    scrollTrigger: {
+      trigger: ".project-img",
+      start: "top 90%", 
+      toggleActions: "play none none reverse",
+      opacity: 0, 
+      duration:2,
+    }
+  }
+);
 
 let filterItem = document.querySelector('.items-links');
 let filterImages = document.querySelectorAll('.gallery img');
