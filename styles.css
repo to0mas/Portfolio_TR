@@ -818,6 +818,7 @@ footer{
     gap: 40px; 
 }
 .item-link{
+    text-transform: uppercase;
     font-size: 25px;
     font-weight: 500;
     cursor: pointer;
@@ -952,6 +953,8 @@ color: transparent;
     align-items: center;
     margin-right: 20px;
     transition: .5s all ease-in-out;
+    text-decoration: none;
+    color: white;
 }
 .right-contact i:hover {
     color: indianred;
