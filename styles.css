@@ -830,7 +830,7 @@ border-radius: 10px;
     color: #000000;
 }
 #btn1{
-    color: indianred;
+    color: #cd5c5c;
 }
 .gallery{
     display: grid;
@@ -844,9 +844,10 @@ border-radius: 10px;
     border-radius: 10px;
     overflow: hidden;
     transition: .5s  ease;
- 
+ position: relative;
     
 }
+
 .project-img:hover img{
 transform: scale(1.1);
 
@@ -869,7 +870,37 @@ transform: scale(1.1);
     background: indianred;
     transition: .5s ease;
   }
+@media  (max-width:1024px){
+    .work-container{
+        width: 90%;
+    }
 
+
+    .items-links{
+        width: 90%;
+    }
+}
+@media  (max-width:991px){
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    .items-links{
+        width: 100%;
+    }
+}
+@media  (max-width:600px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+    .items-links{
+    
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .project-img{
+        height: max-content;
+    }
+}
 
 
 
