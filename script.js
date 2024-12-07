@@ -160,41 +160,7 @@ gsap.fromTo(".skill",
   }
 );
 
-var content1 = document.getElementById("content1");
-var content2 = document.getElementById("content2");
 
-var btn1 = document.getElementById("btn1");
-var btn2 = document.getElementById("btn2");
-
-function openWEB(){
-  content1.style.transform = "translateX(0)"
-   content2.style.transform = "translateX(100%)"
-   btn1.style.background = "#b85050"
-   btn1.style.color = "#000000"
-   btn1.style.borderRadius = " 5px 20px"
-  
-   content1.style.transitionDelay="0.3s";
-  content2.style.transitionDelay="0s";
-
-   btn2.style.background = "#000000"
-   btn2.style.color = "#fff"
-   btn1.style.borderRadius = " 5px 20px"
-  
-}
-function openGRAP(){
-  content1.style.transform = "translateX(100%)"
-   content2.style.transform = "translateX(0)"
-   btn2.style.background = "#b85050"
-   btn2.style.color = "#000000"
-   btn2.style.borderRadius = "20px 5px"
-
-   content2.style.transitionDelay="0.3s";
-   content1.style.transitionDelay="0s";
-   
-   btn1.style.background = "#0000"
-   btn1.style.color = "#fff"
-   btn1.style.borderRadius = " 5px 20px"
-}
 gsap.from(".contact ", {
   opacity: 0,
   y: 100,
@@ -218,6 +184,7 @@ let filterImages = document.querySelectorAll('.gallery img');
 window.addEventListener('load', () => {
   filterItem.addEventListener('click', (selectedItem) => {
     if (selectedItem.target.classList.contains('item-link')) {
+      // Odebrání aktivní třídy z předchozího tlačítka
       document.querySelector('.menu-active').classList.remove('menu-active');
       selectedItem.target.classList.add('menu-active');
 
@@ -225,7 +192,9 @@ window.addEventListener('load', () => {
 
       filterImages.forEach((image) => {
         let imageCategory = image.getAttribute('data-name');
-        if (imageCategory === filterName) {
+
+        // Zobraz všechny obrázky, pokud je vybráno "All"
+        if (filterName === "all" || imageCategory === filterName) {
           image.style.display = 'block';
         } else {
           image.style.display = 'none';

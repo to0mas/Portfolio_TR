@@ -821,8 +821,12 @@ footer{
     font-weight: 500;
     cursor: pointer;
     font-weight: bold;
-    
+border-radius: 10px;    
 
+}
+.item-link:hover{
+    background: indianred;
+    color: #000000;
 }
 #btn1{
     color: indianred;
@@ -831,19 +835,39 @@ footer{
     display: grid;
     grid-template-columns:repeat(3,1fr) ;
    padding: 0 50px;
+   gap: 10px;
+ 
 
 }
 .project-img{
     border-radius: 10px;
     overflow: hidden;
     transition: .5s  ease;
+ 
     
 }
 .project-img:hover img{
 transform: scale(1.1);
 
 }
+.item-link {
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
 
+  
+  .menu-active {
+  color: indianred; 
+    border-radius: 5px; 
+    font-weight: bold;  transition: .5s ease;
+  }
+
+ #btn1:hover{
+    color: #000000;
+    background: indianred;
+    transition: .5s ease;
+  }
 
 
 
