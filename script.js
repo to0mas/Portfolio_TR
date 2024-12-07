@@ -184,7 +184,7 @@ let filterImages = document.querySelectorAll('.gallery img');
 window.addEventListener('load', () => {
   filterItem.addEventListener('click', (selectedItem) => {
     if (selectedItem.target.classList.contains('item-link')) {
-      // Odebrání aktivní třídy z předchozího tlačítka
+     
       document.querySelector('.menu-active').classList.remove('menu-active');
       selectedItem.target.classList.add('menu-active');
 
@@ -193,7 +193,7 @@ window.addEventListener('load', () => {
       filterImages.forEach((image) => {
         let imageCategory = image.getAttribute('data-name');
 
-        // Zobraz všechny obrázky, pokud je vybráno "All"
+        
         if (filterName === "all" || imageCategory === filterName) {
           image.style.display = 'block';
         } else {
