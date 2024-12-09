@@ -884,14 +884,20 @@ transform: scale(1.1);
     .work-container{
         width: 90%;
     }
-
+.work{
+    margin-top: 50px;
+}
 
     .items-links{
         width: 90%;
     }
 }
 @media  (max-width:991px){
+    .work{
+        margin-top: 100px;
+    }
     .gallery{
+       
         grid-template-columns: 1fr 1fr;
     }
     .items-links{
