@@ -74,7 +74,7 @@ html{
 header{
     width: 100%;
     height: 120px;
-    
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,7 +85,7 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     backdrop-filter: blur(10px); 
     border-bottom: rgba(236, 236, 236, 0.1);
-   
+
     -webkit-backdrop-filter: blur(5px); 
 }
 .logo {
@@ -131,6 +131,7 @@ color: white;
 
 .navbar{
     gap: 10px;
+   
 }
 .socials{
     display: flex ;
@@ -240,7 +241,7 @@ opacity: 0;
     height: 95vh;
     z-index: 0; 
     flex-direction: column;
-   
+
 }
 .hero-container{
     align-items: center;
@@ -249,7 +250,7 @@ opacity: 0;
     flex-direction: column; 
 }
 .predstaveni h3{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: lighter;
     text-align: center;
 }
@@ -310,7 +311,7 @@ opacity: 0;
 .hero-btn:hover{
     background: indianred;
     color: black;
-   
+    transform: scale(1.2);
     transition: all .3s ease;
 }
 
@@ -458,6 +459,7 @@ opacity: 0;
             padding: 10px 20px;
            
         }
+        
     }
     @media (min-width: 1100px) and (max-width:1332px){
         .nadpis-1 h1{
@@ -532,6 +534,7 @@ opacity: 0;
 -webkit-text-fill-color: transparent;
 background-clip: text;
 text-fill-color: transparent;
+
     }
     .about-paragraph{
         display: flex;
@@ -544,6 +547,9 @@ text-fill-color: transparent;
         font-weight: lighter;
         font-size: 28px;
         padding: 10px 20px;
+      
+        
+     
     }
     .coin img{
         width: 280px;
@@ -633,6 +639,7 @@ text-fill-color: transparent;
         font-size: 300px;
         color: transparent;            
         -webkit-text-stroke: 3px rgba(700, 92, 92, 0.26); 
+        color: linear-gradient(90deg, #CD5C5C, #FF7F7F, #B22222);
     }
     
     .skill {
@@ -796,12 +803,14 @@ footer{
   display: flex;
     align-items: center;
     padding: 60px 0;
+  
 }
 
 .work-container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 .gallery img{
     width: 100%;
@@ -912,6 +921,8 @@ transform: scale(1.1);
     display: flex;
     justify-content:center ;
 align-items: center;
+margin-top: 90px;
+
 
 }
 .contact-container{
@@ -954,7 +965,7 @@ color: transparent;
     margin-right: 20px;
     transition: .5s all ease-in-out;
     text-decoration: none;
-    color: white;
+    color: white ;
 }
 .right-contact i:hover {
     color: indianred;
@@ -965,13 +976,35 @@ color: transparent;
     .left-contact h2{
         justify-content: center;
         text-align: center;
-        font-size: 80px;
+        font-size: 70px;
         
     }
     .left-contact h1{
-        font-size: 80px;
+        font-size: 70px;
     }
+   .right-contact span{
+    margin:0 auto;
+   }
 
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-btn a{
+    text-decoration: none;
+   color: indianred;
+}
+.hero-btn a:hover{
+    color: #000000;
+}

@@ -63,14 +63,14 @@ gsap.from(".nadpis-1", {
   gsap.from(".nadpis-about ", {
     opacity: 0,
     y: 100,
-    duration: 20,
+    duration: 30,
     ease: "expo.out",
 
     scrollTrigger: {
         trigger: ".nadpis-about",  
         start: "top 80%",           
         end: "top 30%",             
-        scrub: 1,                  
+        scrub: 4,                  
         markers: false              
     }
 });
@@ -155,7 +155,8 @@ gsap.fromTo(".skill",
       start: "top 90%", 
       toggleActions: "play none none reverse",
       opacity: 0, 
-      duration:2,
+      duration:10,
+     
     }
   }
 );
