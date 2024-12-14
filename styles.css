@@ -716,16 +716,16 @@ text-fill-color: transparent;
    
     @media screen and (max-width: 768px) {
         .skill img {
-            width: 100px; /* Velké fotky */
-            height: 100px;
+            width: 80px; 
+            height: 80px;
         }
         .skills-title h1 {
-            font-size: 60px; /* Velký text pro titulek */
+            font-size: 60px; 
             text-align: center;
         }
         .skills-container {
-            width: 600px; /* Velký kruh */
-            height: 600px;
+            width: 400px; 
+            height: 400px;
         }
         .skill:nth-child(1) { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(0deg) translate(250px) rotate(-0deg); }
         .skill:nth-child(2) { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(36deg) translate(250px) rotate(-36deg); }
