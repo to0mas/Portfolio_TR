@@ -516,6 +516,7 @@ opacity: 0;
         height: 50vh;
    z-index: -100;
         padding: 0 300px;
+        margin-top: 50px;
        
     }
     .about-container{
@@ -627,7 +628,7 @@ text-fill-color: transparent;
         position: relative;
         width: 100%;
         height: 80vh;
-        margin-top: 200px;
+        margin-top: 280px;
         padding: 20px;
         background: radial-gradient(circle at center, rgba(205, 92, 92, 0.363), #000000 40%);
         display: flex;
@@ -803,7 +804,7 @@ footer{
   display: flex;
     align-items: center;
     padding: 60px 0;
-  
+  margin-top: 50px;
 }
 
 .work-container{
