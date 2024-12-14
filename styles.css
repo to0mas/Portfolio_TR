@@ -37,7 +37,6 @@ background: black;
     z-index: 10000;
 }
 
-/* Cursor Outline */
 .cursor-outline {
     position: fixed;
     width: 25px; 
@@ -166,7 +165,7 @@ color: white;
 }
 @media only screen and (max-width: 1100px){
     header{
-        padding: 0 30px;
+       
     }
 }
 @media only screen and (max-width: 1500px){
