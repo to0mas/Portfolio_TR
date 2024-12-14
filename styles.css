@@ -513,10 +513,10 @@ opacity: 0;
 
     .about{
         width: 100%;
-        height: 50vh;
+        height: 60vh;
    z-index: -100;
         padding: 0 300px;
-        margin-top: 50px;
+        margin-top: 100px;
        
     }
     .about-container{
@@ -627,7 +627,7 @@ text-fill-color: transparent;
     .skills {
         position: relative;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         margin-top: 280px;
         padding: 20px;
         background: radial-gradient(circle at center, rgba(205, 92, 92, 0.363), #000000 40%);
@@ -804,7 +804,7 @@ footer{
   display: flex;
     align-items: center;
     padding: 60px 0;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .work-container{
