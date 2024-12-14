@@ -422,7 +422,7 @@ opacity: 0;
         }
         
     }
-    @media only screen and (min-width:480px) and (max-width:720px) {
+    @media only screen and (min-width:480px) and (max-width:811px) {
         .hero {
             height: auto; 
             flex-direction: column;
