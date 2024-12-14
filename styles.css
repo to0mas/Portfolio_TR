@@ -180,8 +180,10 @@ color: white;
         margin: 6px 0;
         
     }
- 
-    
+    .nadpis-1{
+       .predstaveni{
+        font-size: 50px;
+       }
     }
     .navbar{
         flex-direction: column;
@@ -232,10 +234,10 @@ opacity: 0;
   .line{
     border-radius: 50px;
   }
-
+}
 
 .hero{
-    margin-top: 70px;
+    margin-top: 20px;
     position: relative;
     width: 100%;
     display: flex;
@@ -243,7 +245,7 @@ opacity: 0;
     height: 95vh;
     z-index: 0; 
     flex-direction: column;
-
+    
 
 }
 .hero-container{
@@ -481,12 +483,12 @@ opacity: 0;
         }
     
         .predstaveni h3 {
-            font-size: 27px; 
+            font-size: 25px; 
             margin-top: 25px;
         }
     
         .nadpis-1 h1 {
-            font-size: 80px;
+            font-size: 100px;
         text-align: center; }
     
         .nadpis-1 span {
@@ -520,7 +522,7 @@ opacity: 0;
         height: 60vh;
    z-index: -100;
         padding: 0 300px;
-        margin-top: 120px;
+        margin-top: 150px;
        
     }
     .about-container{
