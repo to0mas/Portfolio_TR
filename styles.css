@@ -232,7 +232,7 @@ opacity: 0;
   .line{
     border-radius: 50px;
   }
-}
+
 
 .hero{
     margin-top: 70px;
@@ -481,12 +481,12 @@ opacity: 0;
         }
     
         .predstaveni h3 {
-            font-size: 25px; 
+            font-size: 27px; 
             margin-top: 25px;
         }
     
         .nadpis-1 h1 {
-            font-size: 100px;
+            font-size: 80px;
         text-align: center; }
     
         .nadpis-1 span {
