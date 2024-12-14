@@ -165,7 +165,7 @@ color: white;
 }
 @media only screen and (max-width: 1100px){
     header{
-       
+        padding: 0 30px;
     }
 }
 @media only screen and (max-width: 1500px){
@@ -723,6 +723,12 @@ text-fill-color: transparent;
             text-align: center;
         }
        
+        @media screen and (max-width: 1024px){
+            .skill img{
+                width: 40px;
+                height: 40px;
+            }
+        }
        
     .skill:nth-child(1) {
         top: 10%;
