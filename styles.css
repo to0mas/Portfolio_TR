@@ -168,7 +168,7 @@ color: white;
         padding: 0 30px;
     }
 }
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1800px){
     .hamburger{
         display: block;
         cursor: pointer;
@@ -627,7 +627,7 @@ text-fill-color: transparent;
     .skills {
         position: relative;
         width: 100%;
-        height: 100ccvh;
+        height: 100vh;
         margin-top: 280px;
         padding: 20px;
         background: radial-gradient(circle at center, rgba(205, 92, 92, 0.363), #000000 40%);
